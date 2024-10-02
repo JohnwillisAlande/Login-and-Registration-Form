@@ -12,6 +12,16 @@
     </div>
 
 <div class="login">
+<div class="form">
+<h1>Log In</h1>
+<form action="" method="post" name="login">
+<input type="text" name="username" placeholder="Username" required /><br>
+<input type="password" name="password" placeholder="Password" required />
+<br>
+<input name="submit" type="submit" value="Login" />
+</form>
+<p>Not registered yet? <a href='registration.php'>Register Here</a></p>
+</div>
 <?php
 require('db.php');
 session_start();
@@ -34,16 +44,6 @@ if (isset($_POST['username'])){
 	}
     }else{
 ?>
-<div class="form">
-<h1>Log In</h1>
-<form action="" method="post" name="login">
-<input type="text" name="username" placeholder="Username" required /><br>
-<input type="password" name="password" placeholder="Password" required />
-<br>
-<input name="submit" type="submit" value="Login" />
-</form>
-<p>Not registered yet? <a href='registration.php'>Register Here</a></p>
-</div>
 <?php } ?>
 </body>
 </html>

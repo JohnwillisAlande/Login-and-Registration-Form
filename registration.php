@@ -8,6 +8,15 @@
         <img src="cyber2.jpg" class = "image">
     </div>
     <div class="login">
+    <div class="form">
+<h1>Register Here!!</h1>
+<form name="registration" action="" method="post">
+<input type="text" name="username" placeholder="username" required />
+<input type="Email" name="Email" placeholder="Email" required />
+<input type="password" name="password" placeholder="Password" required />
+<input type="submit" name="submit" value="Click me to Register" />
+</form>
+</div>
 
 <?php
 require('db.php');
@@ -41,16 +50,6 @@ if (isset($_POST['username']))
         }
 else{
 ?>
-
-<div class="form">
-<h1>Register Here!!</h1>
-<form name="registration" action="" method="post">
-<input type="text" name="username" placeholder="username" required />
-<input type="Email" name="Email" placeholder="Email" required />
-<input type="password" name="password" placeholder="Password" required />
-<input type="submit" name="submit" value="Click me to Register" />
-</form>
-</div>
 <?php } ?>
 </body>
 </html>
